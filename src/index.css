@@ -7,6 +7,10 @@
   --clr-white: #fff;
   --clr-blue:#19469d;
   --clr-yellow:#f5821f;
+  --clr-light-black:rgba(0, 0, 0, 0.7);
+  --clr-light-gray:#909090;
+  --clr-light-blue:#344a72;
+
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.25rem;
@@ -27,7 +31,7 @@
 }
 
 a{
-  color: #19469d;
+  color: var(--clr-blue);
 }
 html,body{
   background-color: var(--clr-white-10);
@@ -153,7 +157,7 @@ transform: translateY(-50%);
 opacity: 0.5;
  
  
-  background-image: linear-gradient(to bottom, #909090 0, #344a72 100%);
+  background-image: linear-gradient(to bottom, var(--clr-light-gray) 0, var(--clr-light-blue) 100%);
 }
 
 .message-modal{
@@ -161,7 +165,7 @@ opacity: 0.5;
   top: 50%;
   left: 50%;
   transform: translate(-100%, -120%);
-  background-color: rgba(0, 0, 0, 0.7); /* Opaque background */
+  background-color:var(--clr-light-black) ; 
   padding: 20px;
   display: flex;
   align-items: center;
